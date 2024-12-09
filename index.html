@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Анкета соискателя</h1>
+    </header>
+    <form>
+        <h3>Общие данные</h3>
+        <p>
+            <label for="family">Фамилия</label>
+            <input id=family type="text" name="famile">
+        </p>
+        <p>
+            <label for="name">Имя</label>
+            <input id="name" type="text" name="name">
+        </p>
+        <p>
+            <label for="age">Дата рождения</label>
+            <input id="age" type="date" name="age">
+        </p>
+        <p>
+            Пол <br>
+            <input type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            checked
+            />
+            <label for="male">Мужской</label>
+        </p>
+        <p>
+            <input type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            />
+            <label for="female">Женский</label>
+        </p>
+        <p>
+            <label for="citizen">Гражданство</label>
+            <input id="citizen" name="citizen" list="citizenname">
+            <datalist id="citizenname">
+            <option value="Казахстан">
+            <option value="Другое">
+            </datalist>
+        </p>
+        <p>
+            <label for="passport-number">Паспорт</label>
+            <input id="passport-number" type="text" name="passport-number">
+        </p>
+        <p>
+            <label for="who-issued">Кем выдан</label>
+            <input id="who-issued" type="text" name="who-issued">
+        </p>
+        <p>
+            <label for="date-of-issue">Дата выдачи</label>
+            <input id="date-of-issue" type="date" name="date-of-issue">
+        </p>
+    </form>
+    <table>
+        <caption><h2>Опыт работы</h2></caption>
+        
+        <thead>
+            <th>Дата начала работы</th>
+            <th>Дата окончания работы</th>
+            <th>Наименование организации</th>
+            <th>Должность</th>
+            <th>Причины увольнения</th>
+        </thead>
+        <tbody>
+            <td>10.11.2007</td>
+            <td>10.12.2007</td>
+            <td>Контора</td>
+            <td>Электрик</td>
+            <td>Инициатива работника</td>
+        </tbody>
+        <tbody>
+            <td>25.12.2008</td>
+            <td>25.12.2021</td>
+            <td>Контора 2</td>
+            <td>Помощник повара</td>
+            <td>Сокращение должности</td>
+            <tr>
+                <td>12.12.2022</td>
+                <td>по наст. время</td>
+                <td>Контора 3</td>
+                <td>директор</td>
+                <td>работает</td>
+            </tr>
+        </tbody>
+       
+        <tfoot>
+  
+        </tfoot>
+    </table>
+    <p>
+        <label for="cv">
+            Загрузите резюме
+        </label>
+        <input id="cv" name="cv" type="file">
+    </p>
+    <footer>
+        <h2>Проверьте, поставьте дату и подпишите ЭЦП</h2>
+        <label for="date">Дата</label>
+        <input id="date" name="date" type="date">
+        <p>
+            <label for="signature">
+                Загрузите ЭЦП
+            </label>
+            <input id="signature" name="signature" type="file">
+        </p>
+        <p>
+            <button type="button">Проверить заполнение</button>
+            <button type="submit">Отправить данные</button>
+        </p>
+    </footer>
+</body>
+</html>
